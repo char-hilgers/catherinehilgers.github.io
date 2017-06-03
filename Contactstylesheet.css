@@ -1,0 +1,132 @@
+/* The * properties apply to every element on the page */
+
+*{
+  /* See http://learnlayout.com/box-model.html and http://learnlayout.com/box-sizing.html */
+  box-sizing:border-box; 
+  /*This displays borders around each box. The arguments are: width, line style, color. To view borders set width > 0*/
+  border:0px solid black; 
+  /* There were white margins around the background image before I added this line. For some reason adding it to the bg div did not have the same effect */
+  margin:0px;  }
+
+a {
+  text-decoration:none;
+}
+.header h1{ 
+  color:Black;
+  font-family:arial;
+  font-size:60px;
+  text-align:center;
+  padding: 1000 0;
+  letter-spacing:0.3em;
+  text-transform:uppercase;
+  padding: 70px 0;
+
+  /* background-color:White; */
+	
+}
+
+
+.header a{  
+  text-decoration:none;
+  /*background-color:White;*/
+  color:#777777;	
+}
+
+.header {
+  margin: 0px;
+ /* padding: 70px 0;*/
+
+}
+
+
+.bg {
+  margin:0px;
+  width: 100%;
+  height: 1000px;
+  background-color: #c17c96;
+  background-size: cover; 
+}
+
+
+.navigation {
+  width: 100%;
+  /*background-color: rgba(255, 255, 255, 0);*/
+  height: auto;
+  text-align: center;
+  /*position: fixed;
+  left: 0;
+  top: 0;*/
+  z-index: 999; /* puts it in the foreground. An element with a higher z-index is closer to the front*/
+}
+
+/* the navigation bar: and unordered list (ul) */
+.navigation ul {
+  padding: 0;
+}
+
+/* the list elements */
+.navigation li {
+  color: #babbbc;
+  /* makes them in a line instead of each on a new line */
+  display: inline-block;
+  /* sans-serif is a backup font in case the user does not have roboto on their computer */
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  margin: 20px;
+  text-transform: uppercase;
+}
+
+/*make the link to current page a darker color*/
+#current{
+  color:#777777;
+}
+
+/*Everythign above this line is common to all pages on the website. Below this line is content unique to the Contact page */
+
+
+/* This is a container box for the mission statement. I needed this to make the mission statement centered. The combination of display:block and margin:auto centers the container div. text-align:center centers the divs inside of it*/
+.container{ 
+  display:block;
+  margin:auto;
+  text-align:center;
+}
+
+.contactinfo {
+  /* Uncomment these lines to add bg image to mission statement */
+  background: url("http://i.imgur.com/nJEhu97.jpg") no-repeat center center;
+  background: rgba(0,0,0,0) no-repeat center center;
+  background-size: cover;
+  padding: 10px;
+  display:block;
+  margin:auto;
+  margin-top:50px;
+  width:600px;
+  height:624px;
+  }
+
+/* style all paragraph elements inside of the contactform div */
+.contactinfo p{
+  font-family: 'Roboto', sans-serif;
+  text-align:center;
+  text-transform:uppercase;
+  color: #ffffff; /* white */
+}
+
+.contactinfo a{
+  font-family: 'Roboto', sans-serif;
+  text-align:center;
+  text-transform:uppercase;
+  text-decoration:none;
+  color: #ffffff; /* white */
+}
+
+.contactinfo input[type=submit]{
+  font-family: 'Roboto', sans-serif;
+  text-align:center;
+  text-transform:uppercase;
+  color: #ffffff;
+  background-color:transparent;
+
+}
