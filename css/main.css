@@ -1,89 +1,8 @@
-/* The * properties apply to every element on the page */
-
-*{
-  /* See http://learnlayout.com/box-model.html and http://learnlayout.com/box-sizing.html */
-  box-sizing:border-box; 
-  /*This displays borders around each box. The arguments are: width, line style, color. To view borders set width > 0*/
-  border:0px solid black; 
-  /* There were white margins around the background image before I added this line. For some reason adding it to the bg div did not have the same effect */
-  margin:0px;  }
-
-
-h1{ 
-  color:Black;
-  font-family:arial;
-  font-size:60px;
-  text-align:center;
-  padding: 1000 0;
-  letter-spacing:0.3em;
-  text-transform:uppercase;
-  padding: 70px 0;
-
-  /* background-color:White; */
-	
-}
-
-
-a{  
-  text-decoration:none;
-  /*background-color:White;*/
-  color:#777777;	
-}
-
-.header {
-  margin: 0px;
- /* padding: 70px 0;*/
-
-}
-
-
 .bg {
-  margin:0px;
-  width: 100%;
-  height: 1000px;
   background-color: #000000;
-  background-size: cover; 
 }
-
-
-.navigation {
-  width: 100%;
-  /*background-color: rgba(255, 255, 255, 0);*/
-  height: auto;
-  text-align: center;
-  /*position: fixed;
-  left: 0;
-  top: 0;*/
-  z-index: 999; /* puts it in the foreground. An element with a higher z-index is closer to the front*/
-}
-
-.navigation ul {
-  padding: 0;
-}
-
-.navigation li {
-  color: #babbbc;
-  display: inline-block;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
-  font-weight: 100;
-  letter-spacing: 2px;
-  margin: 20px;
-  text-transform: uppercase;
-}
-
-#current{
-  color:#777777;
-}
-
-/*Everythign above this line is common to all pages on the website. Below this line is content unique to the Home page */
-
 
 .picture {
-  /*background: url("http://i.imgur.com/nJEhu97.jpg") no-repeat center center;*/
-  /*background-color: transparent;*/
-  /*background-size: cover;*/
-  /*padding: 100px;*/
   display:block;
   margin:auto;
   margin-top:50px;
