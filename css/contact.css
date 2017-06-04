@@ -1,31 +1,8 @@
 .bg {
-  background-color: #c17c96;
-}
-
-/* This is a container box for the mission statement. I needed this to make the mission statement centered. The combination of display:block and margin:auto centers the container div. text-align:center centers the divs inside of it*/
-.container{ 
-  display:block;
-  margin:auto;
-  text-align:center;
-}
-
-.contactinfo {
-  margin-top:50px;
-  }
-
-/* style all paragraph elements inside of the contactform div */
-.contactinfo p{
-  font-family: 'Roboto', sans-serif;
-  text-align:center;
-  text-transform:uppercase;
-  color: #ffffff; /* white */
+  background-color: #c17c96; /* pink */
 }
 
 .contactinfo a{
-  font-family: 'Roboto', sans-serif;
-  text-align:center;
-  text-transform:uppercase;
-  text-decoration:none;
   color: #ffffff; /* white */
 }
 

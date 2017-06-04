@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link href="css/main.css" type="text/css" rel="stylesheet">
+
+  <!-- Link to css files, which provide formatting -->
+  
   <link href="css/header.css" type="text/css" rel="stylesheet">
+  <link href="css/main.css" type="text/css" rel="stylesheet"> 
  
     <title>Future Ethics</title>  <!-- title is what appears in the browser tab -->
 
@@ -10,30 +13,37 @@
 
 <body>
 
-  <div class="bg">
+  <!-- Large header -->
+     
+  <div class="bg"> <!-- classes are refered to in the css file by .class; i.e. the bg class is refered to as .bg -->
   <div class="header">
   <h1>
-   <a href="/Users/claradeljunco/Documents/Label/Website/index.html" title="Future Ethics">
+   <a href="index.html" title="Future Ethics">
      Future Ethics
    </a>
   </h1>
   </div>
 
+  <!-- Navigation bar -->
+
   <div class="navigation">
    <ul>
-      <a href="/Users/claradeljunco/Documents/Label/Website/index.html"  title="Future Ethics"> <li id="current">Home</li> </a>
-      <a href="/Users/claradeljunco/Documents/Label/Website/about/index.html" title="About"> <li>About</li> </a>
-      <a href="/Users/claradeljunco/Documents/Label/Website/contact/index.html"  title="Contact"> <li>Contact</li> </a>
+      <!-- ids are refered to in the css file by #id; i.e. the current class is refered to as #current. ids are more specific than classes; they will usually refer to just 1 element -->
+      <a href="index.html"  title="Future Ethics"><li id="current">Home</li></a>
+      <a href="about/index.html" title="About"><li>About</li></a>
+      <a href="contact/index.html"  title="Contact"><li>Contact</li></a>
     </ul>
 
   </div>
 
-<!-- Everythign above this line is common to all pages on the website (except one thing! Can you spot it?). Below this line is content unique to the Home page --> 
+<!-- Cicada Image --> 
 
-  <div class="picture">
+  <div class="container">
+    <div class="picture">
  
-     <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Emerging_Cicada.png" alt="the cicada continuously sheds its skin" width=100% height=100%>
+     <img src="https://upload.wikimedia.org/wikipedia/commons/6/64/Emerging_Cicada.png" title="the cicada continuously sheds its skin" alt="the cicada continuously sheds its skin" width=100% height=100%> <!-- Setting width and height to 100% makes the image fill the box. The dimensions of the box are set in the main.css file -->
 
+    </div>
   </div>
 </div>
 

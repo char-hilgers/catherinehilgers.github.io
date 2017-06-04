@@ -1,38 +1,13 @@
 .bg {
-  background-color: #1D3F03;
-}
-
-
-/* This is a container box for the mission statement. I needed this to make the mission statement centered. The combination of display:block and margin:auto centers the container div. text-align:center centers the divs inside of it*/
-.container{ 
-display:block;
-margin:auto;
-text-align:center;
+  background-color: #1D3F03; /* green */
 }
 
 .mission {
-  /* Uncomment these lines to add bg image to mission statement */
-  /*background: url("http://i.imgur.com/nJEhu97.jpg") no-repeat center center;*/
-  background-color:transparent;
-  background-size: cover;
-  /* inline-block makes the div shrink-to-fit the elements inside; in this case, the text of the mission staement. However, inline-block div cannot be centered on the page, so I had to add a container div and center this one inside it (see above) */
-  display:inline-block;
   margin:auto;
-  margin-top:50px;
-  color: #ffffff;
   width:600px;
-  
-  /*height:624px;*/
-  }
-
-/* style all paragraph elements inside of the mission div */
-.mission p{
-  font-family: 'Roboto', sans-serif;
-  text-align:center;
-  text-transform:uppercase;
-  /*color: #babbbc;*/
 }
 
+/* By default, links are blue and underlined. In the header.css file, all links are styled to not be underlined. I want the link to rave ethics to be underlined, so I'm specifying that links in the mission div should be underlined and white. Anything that I specified for all links in the header file will apply unless I override using a command like this.*/
 .mission a{
   color: #ffffff;
   text-decoration: underline;
