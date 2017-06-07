@@ -87,18 +87,19 @@ a{
 
   .navigation li {
     display: block; /*make list elements appear vertically*/
-    margin:0.5em;
+    margin:2em;
   }
 
   /* set smaller font sizes for smart phone screens*/
-  h1{ 
-    font-size:2em; /*4 em is relative to 16px base font size*/
-    letter-spacing:0.2em; /*0.2 em is relative to 4em font size, i.e. 0.2em = 0.2*4em = 0.2*4*16px = 12.8px*/
+  h1{
+   padding:2em;
+/*    font-size:2em;*/ /*4 em is relative to 16px base font size*/
+   /* letter-spacing:0.2em;*/ /*0.2 em is relative to 4em font size, i.e. 0.2em = 0.2*4em = 0.2*4*16px = 12.8px*/
   }
 
-  p{
+/*  p{
     font-size:0.8em;
-  }
+  }*/
 
   .container{
     width: 75%;
