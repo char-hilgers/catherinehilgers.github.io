@@ -83,7 +83,12 @@ a{
 /* Modify appearance on smartphone screens */
 
 /* the following commands apply to screens smaller than 480 px wide, i.e. smartphones*/
-@media only screen and (max-device-width : 667px){
+@media only screen and (max-device-width : 667px),(max-width:480px){
+
+  .navigation{
+    padding-top:0em;
+    padding-bottom:2em;
+  }
 
   .navigation li {
     display: block; /*make list elements appear vertically*/
@@ -92,14 +97,11 @@ a{
 
   /* set smaller font sizes for smart phone screens*/
   h1{
-   padding:2em;
+   padding-top:1.5em;
+   padding-bottom:0.5em;
 /*    font-size:2em;*/ /*4 em is relative to 16px base font size*/
    /* letter-spacing:0.2em;*/ /*0.2 em is relative to 4em font size, i.e. 0.2em = 0.2*4em = 0.2*4*16px = 12.8px*/
   }
-
-/*  p{
-    font-size:0.8em;
-  }*/
 
   .container{
     width: 75%;
