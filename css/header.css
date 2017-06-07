@@ -93,10 +93,12 @@ a{
   .navigation li {
     display: block; /*make list elements appear vertically*/
     margin:2em;
+    font-size:2em;
   }
 
   /* set smaller font sizes for smart phone screens*/
   h1{
+   font-size:8em;
    padding-top:1.5em;
    padding-bottom:0.5em;
 /*    font-size:2em;*/ /*4 em is relative to 16px base font size*/
@@ -105,6 +107,10 @@ a{
 
   .container{
     width: 75%;
+  }
+  
+  p {
+  font-size:2em;
   }
 
 }
