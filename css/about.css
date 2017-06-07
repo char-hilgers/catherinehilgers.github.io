@@ -1,14 +1,13 @@
-.bg {
+body {
   background-color: #1D3F03; /* green */
 }
 
-.mission {
+.container p {
   margin:auto;
-  width:600px;
-}
+  }
 
 /* By default, links are blue and underlined. In the header.css file, all links are styled to not be underlined. I want the link to rave ethics to be underlined, so I'm specifying that links in the mission div should be underlined and white. Anything that I specified for all links in the header file will apply unless I override using a command like this.*/
-.mission a{
+.container a{
   color: #ffffff;
   text-decoration: underline;
 }

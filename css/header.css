@@ -4,31 +4,38 @@
   /*This displays borders around each box. To view borders set width > 0px */
   border:0px solid black; 
   /* There were white margins around the background image before I added this line. */
-  margin:0px; }
+  margin:0px; 
+}
 
-.bg {
-  height: 1000px;
-} 
+/*makes the body take up at least the height of the browser window*/
+html,body{
+  min-height:100%;
+}
 
-  
+html{
+  font-size:16px; /* Sets the base font size. In remaining code, 1em = 16px, 2em = 32px, etc. */
+}
+
+
+body{
+   /* sans-serif is a backup font in case the user does not have roboto on their computer */
+  font-family: 'Roboto', sans-serif;
+  text-transform:uppercase;
+  text-align:center;
+}
+ 
 /* set properties of the main header*/
 h1{ 
-  color:Black;
   font-family:arial;
-  font-size:60px;
-  text-align:center;
-  letter-spacing:0.3em;
-  text-transform:uppercase;
-  padding: 70px 0;
+  font-size:4em; /*4 em is relative to 16px base font size*/
+  letter-spacing:0.2em; /*0.2 em is relative to 4em font size, i.e. 0.2em = 0.2*4em = 0.2*4*16px = 12.8px*/
+  padding: 1em 0; /*1 em is relative to 4em font size*/
 }
 
 /* set properties of paragraph elements*/
 
 p{
-  font-family: 'Roboto', sans-serif;
-  text-align:center;
-  text-transform:uppercase;
-  color: #ffffff;
+  color: #ffffff; /*white*/
 }
 
 /* By default, links are blue and underlined. Here I set them to be not underlined by default.*/
@@ -38,12 +45,8 @@ a{
 
 /*I want the header link to be grey. The header link will inherit the property of being not underlined.*/
 .header a{
-  color:#777777;	
+  color:#777777; /*dark grey*/	
 }
-
-.navigation {
-  text-align: center;
- }
 
 /* the navigation bar: an unordered list (ul) */
 .navigation ul {
@@ -54,14 +57,11 @@ a{
 .navigation li {
   color: #babbbc; /*light grey*/
   /* makes items in a line instead of each on a new line */
-  display: inline-block;
-  /* sans-serif is a backup font in case the user does not have roboto on their computer */
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+  display: inline-block; 
+  font-size: 1em;
   font-weight: 100;
-  letter-spacing: 2px;
-  margin: 20px;
-  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin:1em;
 }
 
 /*make the link to current page a darker color*/
@@ -71,6 +71,38 @@ a{
 
 /* A container box for the content on each page. Getting the content of each page cnetered was a bit of trial and error.*/
 .container {
-  margin-top: 50px; 
+  margin:auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width:60%;
+  min-width:200px;
+  overflow:hidden;
+}
+
+
+/* Modify appearance on smartphone screens */
+
+/* the following commands apply to screens smaller than 480 px wide, i.e. smartphones*/
+@media only screen and (max-width:480px){
+
+  .navigation li {
+    display: block; /*make list elements appear vertically*/
+    margin:0.5em;
+  }
+
+  /* set smaller font sizes for smart phone screens*/
+  h1{ 
+    font-size:2em; /*4 em is relative to 16px base font size*/
+    letter-spacing:0.2em; /*0.2 em is relative to 4em font size, i.e. 0.2em = 0.2*4em = 0.2*4*16px = 12.8px*/
+  }
+
+  p{
+    font-size:0.8em;
+  }
+
+  .container{
+    width: 75%;
+  }
+
 }
 

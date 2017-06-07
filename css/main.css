@@ -1,11 +1,13 @@
-.bg {
+body {
   background-color: #000000; /*black*/
 }
 
-.picture {
+.container img{
  /* margin:auto centers the box horizontally */
-  margin:auto;
-  /* Set dimensions of box; here, sets dimensions of image */ 
-  width: 620px;
-  height: 560px;
+  /*margin:auto;*/
+  /* Set dimensions of box; here, sets dimensions of image */
+  display:block; 
+  max-width: 100%;
+  min-width: 100px;
+  height: auto;
  }
