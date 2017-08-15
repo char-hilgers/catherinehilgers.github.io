@@ -1,8 +1,29 @@
 body {
-  background-color: #c17c96; /* pink */
+  background-color: rgb(252,155,45); /*orange*/;
 }
 
-.container a{
-  color: #ffffff; /* white */
+.header a{
+  color: rgb(112,110,0); /*olive green*/
 }
+
+.navigation li{
+  color:rgb(209,208,173); /*brown-beige*/
+}
+
+#current{
+  color: rgb(209,208,173); /*brown-beige*/
+}
+
+/*links in contact*/
+.container a{
+  color: rgb(174,255,0); /*neon green*/
+
+}
+
+.container p{
+   color: rgb(174,255,0); /*neon green*/
+
+ 
+}
+
 

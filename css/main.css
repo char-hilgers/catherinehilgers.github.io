@@ -1,5 +1,17 @@
 body {
-  background-color: #000000; /*black*/
+  background-color:rgb(174,255,0); /*neon green*/
+}
+
+.header a{
+  color: rgb(112,110,0); /*olive green*/
+}
+
+.navigation li{
+  color: rgb(188,164,124); /*light brown*/
+}
+
+#current{
+  color:rgb(188,164,124); /*light brown*/
 }
 
 .container img{
