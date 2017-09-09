@@ -20,7 +20,7 @@ html{
 body{
    /* sans-serif is a backup font in case the user does not have roboto on their computer */
   font-family: 'Roboto', sans-serif;
-  text-transform:uppercase;
+  /*text-transform:uppercase;*/
   text-align:center;
 }
  
@@ -30,6 +30,7 @@ h1{
   font-size:4em; /*4 em is relative to 16px base font size*/
   letter-spacing:0.2em; /*0.2 em is relative to 4em font size, i.e. 0.2em = 0.2*4em = 0.2*4*16px = 12.8px*/
   padding: 1em 0; /*1 em is relative to 4em font size*/
+  text-transform:uppercase;
 }
 
 /* set properties of paragraph elements*/
@@ -62,6 +63,7 @@ a{
   font-weight: 100;
   letter-spacing: 0.15em;
   margin:1em;
+  text-transform:uppercase;
 }
 
 /*make the link to current page a darker color*/
