@@ -30,7 +30,7 @@ h1{
   font-size:4em; /*4 em is relative to 16px base font size*/
   font-weight:bold;
   letter-spacing:0.2em; /*0.2 em is relative to 4em font size, i.e. 0.2em = 0.2*4em = 0.2*4*16px = 12.8px*/
-  padding: 1em 0; /*1 em is relative to 4em font size*/
+  padding: 1em 0em; /*1 em is relative to 4em font size*/
   text-transform:uppercase;
 }
 
@@ -45,9 +45,16 @@ a{
   text-decoration:none;
 }
 
+  /* Show normal screen elements (for now just the header) and hide mobile elements */
+
+.mobileShow {display: none;}
+
+.normalShow {display: inline;}
+
 .header img{
   height: 2em;
   vertical-align:middle;
+  margin: 0 0.2em 0 0; 
 }
 
 /* the navigation bar: an unordered list (ul) */
@@ -106,10 +113,19 @@ a{
    padding-bottom:0.5em;
 /*    font-size:2em;*/ /*4 em is relative to 16px base font size*/
    /* letter-spacing:0.2em;*/ /*0.2 em is relative to 4em font size, i.e. 0.2em = 0.2*4em = 0.2*4*16px = 12.8px*/
+   padding-right: 0;
+   padding-left: 0;
   }
 
+  /* Show mobile elements (for now just the header) and hide normal screen elements */
+  .mobileShow {display: inline;}
+
+  .normalShow {display: none;}
+
   .header img{
-    height: 2em;
+    display: inline-block;
+    height: 1.5em;
+    margin: 0 0.25em 0 0; 
    }
 
   .container{
