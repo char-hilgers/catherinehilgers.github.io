@@ -1,0 +1,38 @@
+body {
+  background-color: rgb(112,110,0); /*olive green*/
+}
+
+.header a{
+  color: rgb(252,155,45); /*orange*/ 
+}
+
+.navigation li{
+  color: rgb(188,164,124); /*light brown*/
+}
+
+#current{
+  color: rgb(252,155,45); /*orange*/ 
+}
+
+.container img{
+ /* margin:auto centers the box horizontally */
+  /*margin:auto;*/
+  /* Set dimensions of box; here, sets dimensions of image */
+  display:block; 
+  max-width: 100%;
+  min-width: 100px;
+  height: auto;
+ }
+
+.container p {
+  color: rgb(174,255,0); /*neon green*/ 
+  text-align: center; 
+  margin:auto;
+  text-transform: none;
+  }
+
+/* By default, links are blue and underlined. In the header.css file, all links are styled to not be underlined. I want the link to rave ethics to be underlined, so I'm specifying that links in the mission div should be underlined and white. Anything that I specified for all links in the header file will apply unless I override using a command like this.*/
+.container a{
+  color: rgb(174,255,0); /*orange*/ 
+  text-decoration: underline;
+}
