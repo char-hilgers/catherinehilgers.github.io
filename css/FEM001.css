@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(112,110,0); /*olive green*/
+  background-color: rgb(209,208,173); /*brown-beige*/
 }
 
 .header a{
@@ -25,7 +25,7 @@ body {
  }
 
 .container p {
-  color: rgb(174,255,0); /*neon green*/ 
+  color: rgb(188,164,124); /*light brown*/
   text-align: center; 
   margin:auto;
   text-transform: none;
