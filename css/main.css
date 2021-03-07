@@ -1,17 +1,22 @@
 body {
-  background-color:rgb(174,255,0); /*neon green*/
+  background-color:#ffffb3; /*banana yellow*/
+  background-image: url('https://i.ibb.co/BBt1zKN/View-of-a-castle-balcony-and-a-beautiful-landscape-with-mountains-and-waterfall.jpg');
+  background-repeat: no-repeat;
+  background-position: center; 
+  background-attachment: fixed;
+  background-size: cover;
 }
 
 .header a{
-  color: rgb(112,110,0); /*olive green*/
+  color:#330033; /*dark purple*/
 }
 
 .navigation li{
-  color: rgb(188,164,124); /*light brown*/
+  color:#330033; /*dark purple*/
 }
 
 #current{
-  color:rgb(188,164,124); /*light brown*/
+  color:#85AE04; /*mid-green*/
 }
 
 .container img{
