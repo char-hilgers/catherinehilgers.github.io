@@ -18,13 +18,3 @@ body {
 #current{
   color:#85AE04; /*mid-green*/
 }
-
-.container img{
- /* margin:auto centers the box horizontally */
-  /*margin:auto;*/
-  /* Set dimensions of box; here, sets dimensions of image */
-  display:block; 
-  max-width: 100%;
-  min-width: 100px;
-  height: auto;
- }
