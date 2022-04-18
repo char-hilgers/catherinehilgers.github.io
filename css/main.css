@@ -18,3 +18,14 @@ body {
 #current{
   color:#85AE04; /*mid-green*/
 }
+
+.container p {
+  color: #330033; /*dark purple*/
+  border-radius: 7px;
+  padding: 10px; 
+  text-align: center; 
+  margin:auto;
+  text-transform: none;
+  background: rgb(255, 255, 255); /* Fallback for older browsers without RGBA-support */
+  background: rgba(255, 255, 255, 0.5);
+}
